@@ -37,6 +37,8 @@ def insertion_sort(lista):
         return lista
     print("bubble_sort:")
     print(bubble_sort(numeros))
+    print("Trocas:" trocas)
+
     print("selection_sort:")
     print(selection_sort(numeros))
     print("insertion_sort:")
