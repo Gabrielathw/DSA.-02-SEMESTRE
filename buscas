@@ -1,0 +1,26 @@
+numeros = [5, 3, 8, 2]
+def bubble_sort(lista):
+    n = len(lista)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if lista[j] > lista[j+1]:
+                lista[j], lista[j+1] = lista[j+1], lista[j]
+
+    return lista
+
+print(bubble_sort(numeros))
+print()
+
+def selection_sort(lista):
+    n = len(lista)
+    for i in range(n):
+        menor = i
+        for j in range(i+1, n):
+            if lista[j] < lista[menor]:
+                menor = j
+                lista[i], lista[menor] = lista[menor], lista[i]
+        return lista
+
+print(bubble_sort(numeros))
+print(selection_sort(numeros))
+print()
